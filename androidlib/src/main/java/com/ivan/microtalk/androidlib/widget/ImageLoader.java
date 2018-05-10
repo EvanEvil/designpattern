@@ -67,6 +67,7 @@ public class ImageLoader {
                     //切换到主线程刷新imageview
                     updateImageView(imageView,bitmap);
                 }
+                mImageCache.put(url,bitmap);
             }
         });
     }
